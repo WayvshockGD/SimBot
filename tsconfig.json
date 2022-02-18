@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "outDir": "./out",
+        "strict": true,
+        "strictPropertyInitialization": true,
+        "pretty": true,
+        "plugins": [
+            { "name": "@typescript-eslint/eslint-plugin" }
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "out"
+    ]
+}
