@@ -9,7 +9,7 @@ const options: ClientOptions = {
     ],
     autoreconnect: true,
     restMode: true,
-    defaultImageFormat: "svg"
+    defaultImageFormat: "jpeg"
 }
 
 export default function createDefaultOptions() {

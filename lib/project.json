@@ -1,1 +1,4 @@
-{ "is_dev": true }
+{ 
+    "override_dev": true,
+    "is_dev": true 
+}

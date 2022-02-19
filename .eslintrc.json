@@ -19,6 +19,7 @@
         "no-duplicate-imports": "error",
         "semi-style": "error",
         "no-redeclare": "error",
-        "comma-spacing": "warn"
+        "comma-spacing": "warn",
+        "no-var-requires": "off"
     }
 }
