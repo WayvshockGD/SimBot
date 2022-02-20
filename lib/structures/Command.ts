@@ -31,7 +31,7 @@ export interface CommandOptions {
 export type CommandRunFunction = (util: CommandUtil, ctx: CommandCTX) => void;
 
 export interface CommandCTX {
-    message: Eris.Message;
+    message: Eris.Message | Eris.CommandInteraction;
     client: SimBot;
     args: string[];
     guild: Eris.Guild;

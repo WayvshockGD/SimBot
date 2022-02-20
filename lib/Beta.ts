@@ -18,6 +18,10 @@ export function getToken() {
     return isDevelopment() === "DEV" ? parsed.DEV_TOKEN! : parsed.TOKEN!;
 }
 
+export function isBeta() {
+    return isDevelopment() === "DEV";
+}
+
 export function isDevelopment() {
     return is_dev ? "DEV" : "PROD";
 }

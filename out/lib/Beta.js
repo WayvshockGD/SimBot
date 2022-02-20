@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isDevelopment = exports.getToken = void 0;
+exports.isDevelopment = exports.isBeta = exports.getToken = void 0;
 const dotenv_1 = require("dotenv");
 const project_json_1 = require("./project.json");
 (0, dotenv_1.config)();
@@ -16,6 +16,10 @@ function getToken() {
     return isDevelopment() === "DEV" ? parsed.DEV_TOKEN : parsed.TOKEN;
 }
 exports.getToken = getToken;
+function isBeta() {
+    return isDevelopment() === "DEV";
+}
+exports.isBeta = isBeta;
 function isDevelopment() {
     return project_json_1.is_dev ? "DEV" : "PROD";
 }
