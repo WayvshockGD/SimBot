@@ -1,7 +1,9 @@
 import { config } from "dotenv";
 import { is_dev, override_dev } from "./project.json";
 
-const { parsed } = config();
+config();
+
+const parsed = process.env;
 
 export function getToken() {
     if (override_dev && parsed?.TOKEN) {
@@ -12,7 +14,8 @@ export function getToken() {
         throw new Error("Both development and production bot tokens don't exist");
     }
 
-    return isDevelopment() === "DEV" ? parsed.DEV_TOKEN : parsed.TOKEN;
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    return isDevelopment() === "DEV" ? parsed.DEV_TOKEN! : parsed.TOKEN!;
 }
 
 export function isDevelopment() {

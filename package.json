@@ -9,7 +9,9 @@
   "author": "Wayvshock",
   "license": "MS-RL",
   "devDependencies": {
+    "@types/gradient-string": "^1.1.2",
     "@types/node": "^17.0.18",
+    "@types/ws": "^8.2.3",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
@@ -17,6 +19,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.0",
-    "eris": "^0.16.1"
+    "eris": "^0.16.1",
+    "gradient-string": "^2.0.0"
   }
 }
